@@ -1,0 +1,33 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:id="@+id/editText1"
+        android:inputType="text"/>
+
+    <Button
+        android:text="@string/scan"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:id="@+id/btnscan" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="49.6dp"
+        android:id="@+id/progressBar1"
+        android:layout_marginBottom="43.6dp"
+        android:max="100"
+        android:background="@android:color/darker_gray"/>
+
+</LinearLayout>
