@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="API\Class1.cs" />
     <Compile Include="API\Common.cs" />
+    <Compile Include="API\model\Book.cs" />
     <Compile Include="API\model\openBD.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -109,7 +110,6 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="API\openBD\" />
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>

@@ -30,4 +30,10 @@
         android:max="100"
         android:background="@android:color/darker_gray"/>
 
+    <Button
+        android:text="@string/register"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:id="@+id/bntregister" />
+
 </LinearLayout>

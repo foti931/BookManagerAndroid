@@ -60,7 +60,8 @@ namespace androidApp
 
             HttpClient client = new HttpClient();
 
-            Uri uri = new Uri(string.Format("https://api.openbd.jp/v1/get?isbn={0}&pretty", scanresult.Text));
+            //Uri uri = new Uri(string.Format("https://api.openbd.jp/v1/get?isbn={0}&pretty", scanresult.Text));
+            Uri uri = new Uri("https://tagkuyaapp.azurewebsites.net/book");
 
             HttpResponseMessage response = await client.GetAsync(uri);
 
@@ -70,8 +71,10 @@ namespace androidApp
 
                 try
                 {
-                    var bookInfo = JsonConvert.DeserializeObject<List<OpenBDResponce>>(content);
-                    edittext.Text = bookInfo.FirstOrDefault().summary.title;
+                    //var bookInfo = JsonConvert.DeserializeObject<List<OpenBDResponce>>(content);
+                    var bookInfo = JsonConvert.DeserializeObject<List<Book>>(content);
+
+                    edittext.Text = bookInfo.FirstOrDefault().Title;
                 }
                 catch (Exception ex)
                 {
